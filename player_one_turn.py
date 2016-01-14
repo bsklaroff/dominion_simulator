@@ -1,6 +1,6 @@
 __author__ = 'stevenkerr'
 import card_classes
-import player_one_alg
+import manual_alg as player_one_alg
 import player_two_alg
 from random import shuffle
 
@@ -19,6 +19,11 @@ class Player_info():
         self.buys = 0
         self.treasure = 0
 
+    def __str__(self):
+      res = ''
+      for k in [x for x in dir(self) if not x.startswith('__')]:
+        res += k + ': ' + str(getattr(self, k)) + '\n'
+      return res
 
 class Turn():
     def __init__(self):
