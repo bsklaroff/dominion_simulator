@@ -1,6 +1,6 @@
 __author__ = 'stevenkerr'
 import card_classes
-import manual_alg as player_one_alg
+import chapel_mania as player_one_alg
 import player_two_alg
 from random import shuffle
 

@@ -228,7 +228,6 @@ def play_game_two(num):
         winner_list = result_one.sum_winners(winner_list)
         rounds += result_one.player_one_turns + result_one.player_two_turns
     print_winner_list(winner_list,rounds)
-    print_winner_list(winner_list,rounds)
 
 #How to run a game
 play_game_two(10000)
